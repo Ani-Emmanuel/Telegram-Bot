@@ -1,8 +1,7 @@
-const express = require("express");
 const db = require("./db");
 const { Telegraf } = require("telegraf");
 
-const bot = new Telegraf("add your bot ref id");
+const bot = new Telegraf("Your Api key here");
 
 bot.on("message", async (ctx, next) => {
   const info = await ctx.tg.getUpdates();

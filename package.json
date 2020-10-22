@@ -13,5 +13,8 @@
   "dependencies": {
     "sqlite3": "^5.0.0",
     "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

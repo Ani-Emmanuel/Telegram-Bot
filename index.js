@@ -1,7 +1,8 @@
 const db = require("./db");
 const { Telegraf } = require("telegraf");
+require("dotenv").config()
 
-const bot = new Telegraf("1304376568:AAGRm5vsC69_1ezvtqqbqxIxE4SsumQl548");
+const bot = new Telegraf(process.env.BOT_API);
 
 bot.on("message", async (ctx, next) => {
   const info = await ctx.tg.getUpdates();
